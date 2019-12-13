@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Seeing the Times Tables </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   
+    <div id="buttonsDiv" class="gridBig">  
+      <!-- check this ID it might not be necessary; it's the whole blooming div.  -->
+      <div id="restart">
+         <button id="start"  class="button1" onclick="startUp();">Start</button> 
+       </div>
+       <div>
+       <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
+       <div>
+       <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
+        </div>
+
+      <section id="multPic" class="centerMult"  >
+       
+       <!-- javascript will populate with divs for number chart   -->
+            </section>
+      <div class="testText">
+        <p id="p1"><p>
+      </div>
+       
+      <div class="inputPlace" id="Q1">
+        <div class="directions">What multiplication fact is in the picture?   </div>
+<div id="factor2"> 
+       2  x <input type="number" id="factor" placeholder="??" maxlength="2" autofocus  > 
+       
+       </div>
+      
+      </div>
+       <div   class="checkAnswer"> 
+         <button id="check1"  class="button1" disabled="true" onclick="checkName()";">Check Answer </button>
+         </div>
+      
+      <div class="inputPlace2"  >
+        
+        <div class="firstFactor" id="A1">
+           2 x   = <input type="number" id="multAnswer" size="1" maxlength="2" /></div>
+      </div>
+       <div class="checkAnswer">
+         <button id="check2"  class="button1" disabled="true" onclick="checkAnswer();">check Answer</button>
+
+
+       </div>
+      
+        <div class="feedbackDiv" id="feedback"></div>
+        
+    </div>
+         <p id="p3"></p>
+      </div>
+
+ 
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
