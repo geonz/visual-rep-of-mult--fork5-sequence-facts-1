@@ -44,8 +44,6 @@ function newFact()
 else 
   {
     // p1.innerHTML="fact number  is: " + factNum;
-   
-
   factor2.innerHTML= factSet + " x " + '<input type="number" id="factor" size="1" maxlength="2"/>';
    A1.style.display="none";
   check2.style.display="none";
@@ -107,7 +105,9 @@ else if (b==factNum)
   feedback.innerHTML="Awesome!  That's the right second factor!"
  document.getElementById("A1").style.display = 'inline';
  document.getElementById("check2").style.display = 'inline';
-  check1.disabled="true";
+  check1.disabled=true;
+  check2.disabled=false;
+  check2.style.color="white";
  
 }
 else
@@ -125,7 +125,7 @@ function checkAnswer()
     var c = multAnswer.value; 
   if (c == factNum*factSet)
   {
-    feedback.innerHTML="That's right!";
+    feedback.innerHTML="That's right! Try the next one! ";
     // need a "next fact" or 
     factNum+=1;
 newFact();
