@@ -6,7 +6,8 @@
   display:block;
    
   padding: 5px;
-  min-width:50px;
+  min-width:80px;
+  min-height: 50px;
   margin: 15px;
 
 }
