@@ -6,40 +6,48 @@
     <title>Seeing the Times Tables </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-   
-    <div id="buttonsDiv" class="gridBig">  
-      <!-- check this ID it might not be necessary; it's the whole blooming div.  -->
-      <div id="restart">
-         <button id="start"  class="button1" onclick="startUp();">Start</button> 
-       </div>
-       <div>
-       <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
-       <div>
-       <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
-        </div>
 
-      <section id="multPic" class="centerMult"  >
-       
-       <!-- javascript will populate with divs for number chart   -->
-            </section>
-      <div class="testText">
-        <p id="p1"><p>
-      </div>
-       
-      <div class="inputPlace" id="Q1">
-        <div class="directions">What multiplication fact is in the picture?   </div>
-<div id="factor2"> 
-       2  x <input type="number" id="factor" placeholder="??" maxlength="2" autofocus  > 
-       
+
+  <body>
+ <div id= "gridBig">  
+      <!-- this is the big layout for everything on this page but it might be part of a page so I'm giving it its own id.  -->
+
+
+      <!-- 3 divs for 3 buttons.  No CSS assigned to them.  -->
+    <div id="startButton">
+          <button id="start"  class="button1" onclick="startUp();">Start</button> 
+    </div>
+    <div>
+          <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
+    <div>
+            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
+    </div>
+
+<!-- This is where the visual representation goes.  It can take various forms. Javascript will populate it. -->
+    <section id="multPic" class="centerMult"  >
+    </section>
+
+<!-- this div is just so I can write test text to see if something ran. -->
+    <div class="testText">   <p id="p1"><p>      </div>
+
+ <!-- The area where user will enter the first answers.  -->
+    <div class="inputPlace" id="Q1">
+      <!-- the  text asking the question -->
+       <div class="directions">What multiplication fact is in the picture?  
        </div>
+       <!-- the actual expression including the input from the user -->
+       <div id="factor2">      2  x <input type="number" id="factor" placeholder="??" maxlength="2" autofocus  > 
+        </div>
       
       </div>
-       <div   class="checkAnswer"> 
+
+<!-- The div for the button to check the answer to the first part.  -->
+
+    <div   class="checkAnswer"> 
          <button id="check1"  class="button1" disabled="false" onclick="checkName()";">Check Answer </button>
-         </div>
+    </div>
       
-      <div class="inputPlace2"  >
+      <div class="inputPlace"  >
         
         <div class="firstFactor" id="A1">
            2 x   = <input type="number" id="multAnswer" size="1" maxlength="2" /></div>

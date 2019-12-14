@@ -23,7 +23,7 @@ body {
   background-color: #fff;
   font-family: 'Roboto', serif;
 }
-.gridBig
+#gridBig
 {
   display: inline-grid;
   grid-template-columns:   repeat(6,1fr); 
