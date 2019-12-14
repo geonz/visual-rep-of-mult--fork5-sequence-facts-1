@@ -2,7 +2,7 @@
 var factNum=5;// the starting number to be multiplied by; the 'answer'
   // 
   // the order in which the facts will be presented. 0, 1 and ten are "rule based" and should be done before we do this.
-var factSequence=[2,5,4,9,3,6,7,8];
+var factSequence=[10, 2,5,4,9,3,6,7,8];
 // the initial setting - arrays begin with "0"
 var factIndex=0;
 // sets the factSet to the right number.   It will change as we go. 
@@ -86,7 +86,7 @@ function createMultImage()
 function checkName(picNum)
 {
 var b = factor.value;
-if (b=="")
+if (b==="")
   {
     feedback.innerHTML="please enter an answer";
   }
